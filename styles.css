@@ -1,0 +1,147 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+}
+
+form, .ty-section {
+    flex-direction: column;
+}
+
+body, .ty-section {
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: Overpass, "sans serif";
+    font-size: 15px;
+    font-weight: 400;
+    height: 100vh;
+}
+
+main {
+    background-color: var(--dark-blue);
+    width: 90vw;
+    border-radius: 1rem;
+    padding: 1.5rem;
+
+}
+
+.rating-section {
+   
+}
+
+form {
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+img[alt= "Star icon"]{
+    transform: scale(0.8);
+    padding: 1rem;
+    border-radius: 50%;
+    position: relative;
+    right: 0.5rem;
+}
+
+h1, h2 {
+    color: var(--white);
+    font-weight: 700;
+}
+
+p, .rating-button {
+    color: var(--light-grey);
+}
+
+p {
+    line-height: 1.5;
+}
+
+img[alt= "Star icon"], .rating-button, .ty-section > p:first-of-type {
+    background-color: hsl(217, 12%, 22%);
+}
+
+form > p {
+    font-size: 16px;
+}
+
+.rating-button-container {
+    align-self: center;
+    justify-content: center;
+    width: 90%;
+    gap: 1rem;
+
+}
+
+.rating-button {
+    border: none;
+    line-height: 0.5;
+    padding: 1.2rem;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+.rating-button:hover {
+    background-color: var(--orange);
+    color: var(--very-dark-blue);
+}
+
+input[type="submit"]{
+    background-color: var(--orange);
+    font-family: inherit;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+    padding: 1rem 0; 
+    border-radius: 3rem;
+    letter-spacing:2px;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--white);
+    color: var(--very-dark-blue);
+}
+
+img[src*="thank"]{
+    scale: 0.8;
+}
+
+.ty-section > p:first-of-type {
+    color: var(--orange);
+    width: 160px;
+    text-align: center;
+    padding: 0.25rem 0.5rem 0 0.5rem;
+    border-radius: 1rem;
+    font-size: 14px;
+}
+
+h2 {
+    margin-top: 0.5rem;
+}
+
+.ty-section > p:last-child {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.ty-section {
+    gap: 1rem;
+    display: none;
+}
+
