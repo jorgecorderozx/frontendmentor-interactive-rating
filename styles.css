@@ -37,7 +37,8 @@ main {
     background-color: var(--dark-blue);
     width: 90vw;
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1.3rem;
+    padding-bottom: 2rem;
 
 }
 
@@ -72,15 +73,12 @@ img[alt= "Star icon"], .rating-button, .ty-section > p:first-of-type {
     background-color: hsl(217, 12%, 22%);
 }
 
-form > p {
-    font-size: 16px;
-}
-
 .rating-button-container {
     align-self: center;
-    justify-content: center;
-    width: 90%;
+    justify-content: space-around;
+    width: 100%;
     gap: 1rem;
+    flex-wrap: wrap;
 
 }
 
@@ -153,3 +151,47 @@ h2 {
     display: none;
 }
 
+@media screen and (width >= 480px){
+    main {
+        padding: 2rem;
+        padding-bottom: 2.5rem;
+        max-width: 412px;
+    }
+
+    form {
+        gap: 1.5rem;
+    }
+
+    img[alt= "Star icon"]{
+        scale: 1.2;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .rating-button-container {
+        justify-content: space-around;
+        
+    }
+    .ty-section {
+        gap: 1.3rem;
+    }
+
+    img[src*="thank"]{
+        scale: 1;
+    }
+
+    .ty-section > p:first-of-type {
+        width: 55%;
+        line-height: 1.7;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .ty-section > p:last-of-type {
+        padding: 0 0.3rem; 
+    }
+}
